@@ -48,7 +48,7 @@ def callback():
 def handle_message(event):
     print("Handle: reply_token: " + event.reply_token + ", message: " + event.message.text)
     content = "{}: {}".format(event.source.user_id, event.message.text)
-    line_bot_api.reply_message(event.reply_token,message)
+    line_bot_api.reply_message(event.reply_token,TextSendMessage(text=content))
 
 #主程式
 if __name__ == "__main__":
