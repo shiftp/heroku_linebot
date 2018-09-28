@@ -50,8 +50,8 @@ def handle_message(event):
     content = "{}: {}".format(event.source.user_id, event.message.text)
     # 回傳給講話的事件
     #line_bot_api.reply_message(event.reply_token,TextSendMessage(text=content))
-    #回傳給個人
-    line_bot_api.push_message(ID, TextSendMessage(text=content))
+    #回傳給我自己個人
+    #line_bot_api.push_message(ID, TextSendMessage(text=content))
 
 
 #主程式
