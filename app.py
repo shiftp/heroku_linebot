@@ -19,7 +19,7 @@ ID =os.environ['MYID']
 
 
 # 必須放上自己的Channel Access Token
-line_bot_api = LineBotApi(toke)
+line_bot_api = LineBotApi(token)
 # 必須放上自己的Channel Secret
 handler = WebhookHandler(secret)
 line_bot_api.push_message(ID, TextSendMessage(text='你可以開始了'))
